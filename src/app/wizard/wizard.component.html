@@ -1,0 +1,10 @@
+<mat-horizontal-stepper   #stepper>
+    <div *ngFor="let cmp of componentsList">
+    <mat-step [stepControl]="cmp.formGroupName" label="{{cmp.stepTitle}}">
+      <ng-container #VC></ng-container>
+    </mat-step>
+</div>
+    </mat-horizontal-stepper>
+
+ 
+
